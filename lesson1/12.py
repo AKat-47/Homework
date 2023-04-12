@@ -1,0 +1,10 @@
+w = float(input())
+h = float(input())
+ras = int(input())
+v = int(input())
+pro = int(input()) / 100
+s = round(w * h, 2)
+litr = round(s / ras + (s / ras) * pro, 2)
+bank = int(litr // v + 1)
+neisp = round(bank * v - litr, 2)
+print(s, litr, bank, neisp)
